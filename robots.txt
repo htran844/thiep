@@ -1,0 +1,98 @@
+# Default rules for all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://chungdoi.com/sitemap.xml
+
+# Block admin/private areas
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /edit/
+Disallow: /dashboard/
+Disallow: /login
+Disallow: /signup
+Disallow: /verify-magic-link
+
+# Allow important pages
+Allow: /blog/
+Allow: /templates/
+Allow: /demo/
+Allow: /cam-nang/
+Allow: /invite/
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# AI Crawler Rules
+# These bots are used for AI training and assistance
+
+# OpenAI GPTBot - Used for ChatGPT
+User-agent: GPTBot
+Allow: /blog/
+Allow: /cam-nang/
+Allow: /templates/
+Disallow: /invite/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /edit/
+
+# Anthropic ClaudeBot
+User-agent: ClaudeBot
+Allow: /blog/
+Allow: /cam-nang/
+Allow: /templates/
+Disallow: /invite/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /edit/
+
+# Anthropic AI crawler
+User-agent: anthropic-ai
+Allow: /blog/
+Allow: /cam-nang/
+Allow: /templates/
+Disallow: /invite/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /edit/
+
+# Google Bard / Gemini
+User-agent: Google-Extended
+Allow: /blog/
+Allow: /cam-nang/
+Allow: /templates/
+Disallow: /invite/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /edit/
+
+# Common Crawl (used by many AI companies)
+User-agent: CCBot
+Allow: /blog/
+Allow: /cam-nang/
+Allow: /templates/
+Disallow: /invite/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /edit/
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /blog/
+Allow: /cam-nang/
+Allow: /templates/
+Disallow: /invite/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /edit/
+
+# LLMs.txt for AI assistants
+# See: https://chungdoi.com/llms.txt
